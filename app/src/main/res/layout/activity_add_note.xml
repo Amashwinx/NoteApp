@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="@color/white"
     tools:context=".AddNoteActivity">
 
     <TextView
@@ -19,39 +20,46 @@
         android:textColor="@color/pink"
         android:textSize="24sp" />
 
-    <ImageView
-        android:id="@+id/saveButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignTop="@id/addNoteHeading"
-        android:layout_marginStart="230dp"
-        android:layout_marginTop="0dp"
-        android:layout_toEndOf="@id/addNoteHeading"
-        android:src="@drawable/done" />
 
     <EditText
         android:id="@+id/titleEditText"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Enter the title"
-        android:padding="12dp"
-        android:textSize="20sp"
         android:layout_below="@id/addNoteHeading"
-        android:background="@drawable/pinkborder"
         android:layout_marginTop="16dp"
-        android:maxLines="1"
-        android:fontFamily="@font/poppins"/>
-    <EditText
-        android:id="@+id/contentEditTevt"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:hint="Enter the description"
-        android:gravity="top"
-        android:padding="12dp"
-        android:textSize="18sp"
-        android:layout_below="@id/titleEditText"
         android:background="@drawable/pinkborder"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter the title"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/material_dynamic_neutral_variant50"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="379dp"
+        android:layout_height="424dp"
+        android:layout_below="@id/titleEditText"
         android:layout_marginTop="12dp"
-        android:fontFamily="@font/poppins"/>
+        android:background="@drawable/pinkborder"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Enter the description"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/material_dynamic_neutral_variant50"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="51dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/contentEditText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="23dp"
+        android:src="@drawable/baseline_add_circle_24" />
 
 </RelativeLayout>
