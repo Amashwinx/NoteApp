@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="#F3AEE0">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -26,9 +27,18 @@
                 android:layout_height="wrap_content"
                 android:text="Title"
                 android:fontFamily="@font/poppins"
-                android:textColor="@color/pink"
+                android:textColor="#D31958"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/updateButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/edit2"
+                />
 
         </RelativeLayout>
 
@@ -36,10 +46,11 @@
             android:id="@+id/contentTextview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Content"
+            android:layout_marginTop="4dp"
             android:fontFamily="@font/poppins"
             android:maxLines="3"
-            android:layout_marginTop="4dp" />
+            android:text="Content"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 
